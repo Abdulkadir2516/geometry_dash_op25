@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://of3upf6gs1tt"]
+[gd_scene load_steps=4 format=3 uid="uid://of3upf6gs1tt"]
 
 [ext_resource type="Texture2D" uid="uid://cfxle4jw5n06b" path="res://assets/backgrounds/bg04-hd.png" id="1_4jlbv"]
 [ext_resource type="Script" uid="uid://bdefd51wmnpe" path="res://Scripts/bölüm_1.gd" id="1_utx4c"]
+[ext_resource type="PackedScene" uid="uid://cfwi5byy1usu2" path="res://Sahneler/player.tscn" id="3_aalt0"]
 
 [node name="Bölüm1" type="Node2D"]
 script = ExtResource("1_utx4c")
@@ -21,3 +22,7 @@ texture = ExtResource("1_4jlbv")
 position = Vector2(1800, 300)
 scale = Vector2(1.171, 0.585)
 texture = ExtResource("1_4jlbv")
+
+[node name="Player" parent="." instance=ExtResource("3_aalt0")]
+position = Vector2(145, 295)
+scale = Vector2(1.5, 1.5)
