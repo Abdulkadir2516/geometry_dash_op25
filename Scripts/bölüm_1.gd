@@ -24,6 +24,7 @@ func _ready() -> void:
 
 	# 5. Ana sahneye ekle
 	
+	#github deneme
 	
 
 func _physics_process(delta: float) -> void:
