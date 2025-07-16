@@ -12,34 +12,51 @@ func _ready() -> void:
 	g1=$ground1
 	g2=$ground2
 	
-	var karakter_sahne = preload("res://Sahneler/blok.tscn")
-
-	# 2. Yeni bir kopyasını oluştur
-	var yeni_karakter = karakter_sahne.instantiate()
-
-	# 4. İsteğe bağlı: ismini değiştir
-	yeni_karakter.position = Vector2(100,100)
-	yeni_karakter.name = "PlayerClone"
-	add_child(yeni_karakter)
-
-	# 5. Ana sahneye ekle
 	
-	#github deneme
+	for i in range(1,8):
+		
+		var yeni_karakter = $blok.duplicate()
+		yeni_karakter.position = Vector2(i*600,400)
+		yeni_karakter.name = "blok" + str(i)
+		add_child(yeni_karakter)
+
 	
 
 func _physics_process(delta: float) -> void:
-	bg1.position.x -= hiz
-	bg2.position.x -= hiz
-	if bg1.position.x < -600:
-		bg1.position.x = 1790
+	
+	#bg1.position.x -= hiz
+	#bg2.position.x -= hiz
+	#if bg1.position.x < -600:
+		#bg1.position.x = 1790
+		#
+	#elif bg2.position.x < -600:
+		#bg2.position.x = 1790
 		
-	elif bg2.position.x < -600:
-		bg2.position.x = 1790
+	#g1.position.x -= hiz*3
+	#g2.position.x -= hiz*3
+	#if g1.position.x < -600:
+		#g1.position.x = 1790
+		#
+	#elif g2.position.x < -600:
+		#g2.position.x = 1790
 		
-	g1.position.x -= hiz*3
-	g2.position.x -= hiz*3
-	if g1.position.x < -600:
-		g1.position.x = 1790
+	_sabit_hızda_hareket(g1, hiz*3)
+	_sabit_hızda_hareket(g2, hiz*3)
+	_sabit_hızda_hareket(bg1, hiz)
+	_sabit_hızda_hareket(bg2, hiz)
+	
+	for i in range(1,8):
 		
-	elif g2.position.x < -600:
-		g2.position.x = 1790
+		_sabit_hızda_hareket2(get_node("blok"+str(i)), hiz*2)
+	
+	
+func _sabit_hızda_hareket(karakter:Sprite2D, hiz:float):
+	karakter.position.x -= hiz
+	if karakter.position.x < -600:
+		karakter.position.x = 1790
+	
+func _sabit_hızda_hareket2(karakter:CharacterBody2D, hiz:float):
+	karakter.position.x -= hiz
+	if karakter.position.x < -600:
+		karakter.position.x = 1790
+	

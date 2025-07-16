@@ -54,4 +54,3 @@ position = Vector2(241, 431)
 scale = Vector2(1.5, 1.5)
 
 [node name="blok" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(12, 4)
