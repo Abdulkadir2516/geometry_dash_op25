@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cfwi5byy1usu2"]
+[gd_scene load_steps=36 format=3 uid="uid://cfwi5byy1usu2"]
 
 [ext_resource type="Script" uid="uid://bralgwpnwyhwk" path="res://Scripts/player.gd" id="1_4ngvs"]
 [ext_resource type="Texture2D" uid="uid://ds475riykyip4" path="res://assets/player/layerOne.png" id="1_ph3qt"]
@@ -211,6 +211,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Curve" id="Curve_4ngvs"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_4ngvs"]
+offsets = PackedFloat32Array(0, 0.555556, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 1, 0, 0.956863, 1, 1, 1, 0)
+
 [node name="Player" type="CharacterBody2D"]
 rotation = 6.28319
 script = ExtResource("1_4ngvs")
@@ -230,3 +238,17 @@ color = Color(0.741176, 0, 0.0666667, 1)
 position = Vector2(1, 2)
 sprite_frames = SubResource("SpriteFrames_tpl4u")
 frame = 21
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-21, 22)
+amount = 60
+lifetime = 0.6
+speed_scale = 0.5
+direction = Vector2(-1, 0)
+spread = 30.86
+gravity = Vector2(-980, -500)
+initial_velocity_max = 100.0
+scale_amount_min = 10.0
+scale_amount_max = 10.0
+scale_amount_curve = SubResource("Curve_4ngvs")
+color_ramp = SubResource("Gradient_4ngvs")

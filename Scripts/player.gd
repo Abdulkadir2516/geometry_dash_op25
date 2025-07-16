@@ -4,6 +4,8 @@ extends CharacterBody2D
 var kontrol = true
 #Birinci Yöntem
 func _physics_process(delta: float) -> void:
+
+
 	velocity = Vector2.ZERO
 	if Input.is_action_just_pressed("jump"):
 		
@@ -11,18 +13,30 @@ func _physics_process(delta: float) -> void:
 			kontrol = false
 			for i in range(10):
 				velocity.y = velocity.y - 2
+				$".".rotation += 18 
 				move_and_collide(velocity * karakterHiz)
-				await get_tree().create_timer(.03).timeout
+				await get_tree().create_timer(.04).timeout
 			
 			for i in range(10):
 				velocity.y += 2
+				$".".rotation += 18 
 				move_and_collide(velocity * karakterHiz)
-				await get_tree().create_timer(.03).timeout
+				await get_tree().create_timer(.04).timeout
 			kontrol = true
 			
+		$".".rotation = 0 
+		
+		
+		
+ 
+	
 	#move_and_collide(velocity * karakterHiz)
 
 
+
+	
+	
+	
 		
 
 # İkinci Yöntem
