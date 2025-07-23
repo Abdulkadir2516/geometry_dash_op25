@@ -50,7 +50,7 @@ offset_bottom = 34.0
 color = Color(0, 0, 0.156863, 0.807843)
 
 [node name="Player" parent="." instance=ExtResource("3_aalt0")]
-position = Vector2(241, 431)
+position = Vector2(240, 430)
 scale = Vector2(1.5, 1.5)
 
 [node name="blok" parent="." instance=ExtResource("5_60nbn")]

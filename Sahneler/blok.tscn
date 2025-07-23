@@ -1,10 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxbear524v3cn"]
+[gd_scene load_steps=5 format=3 uid="uid://cxbear524v3cn"]
 
 [ext_resource type="Texture2D" uid="uid://8n0yg5wt11w0" path="res://assets/spritesheet.png" id="1_jj5nw"]
+[ext_resource type="Script" uid="uid://dn71yqtjlkjck" path="res://Scripts/blok.gd" id="1_wld0c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wld0c"]
+size = Vector2(44.3283, 4.13636)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jj5nw"]
 
 [node name="blok" type="CharacterBody2D"]
+script = ExtResource("1_wld0c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(43, 8.84375)
+scale = Vector2(1.22348, 1.375)
+shape = SubResource("RectangleShape2D_wld0c")
 
 [node name="kutu" type="Sprite2D" parent="."]
 position = Vector2(43, 36)
@@ -14,6 +24,10 @@ hframes = 6
 vframes = 2
 frame = 8
 
-[node name="hitbox" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 position = Vector2(41, 34)
+
+[node name="hitbox" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_jj5nw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
