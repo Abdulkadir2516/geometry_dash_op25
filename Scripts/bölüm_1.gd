@@ -5,7 +5,6 @@ var bg1 = Sprite2D
 var bg2 = Sprite2D
 var g1 = Sprite2D
 var g2 = Sprite2D
-var kutu = CharacterBody2D
 func _ready() -> void:
 	bg1 = $"Bg04-hd"
 	bg2 = $"Bg04-hd2"
