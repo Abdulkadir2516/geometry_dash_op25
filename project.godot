@@ -15,6 +15,10 @@ run/main_scene="uid://px7ynjfo4xfo"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Ortak="*res://Scripts/ortak.gd"
+
 [display]
 
 window/size/viewport_width=1200

@@ -6,6 +6,10 @@ var bg2 = Sprite2D
 var g1 = Sprite2D
 var g2 = Sprite2D
 func _ready() -> void:
+	$Player.get_node("karakterler").frame = Ortak.frame
+	$Player.get_node("ColorRect").color = Ortak.color
+	$Player.get_node("CPUParticles2D").color = Ortak.color
+	
 	bg1 = $"Bg04-hd"
 	bg2 = $"Bg04-hd2"
 	g1=$ground1
