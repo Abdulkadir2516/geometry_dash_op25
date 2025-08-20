@@ -30,3 +30,9 @@ func _on_start_pressed() -> void:
 
 func _on_color_picker_button_color_changed(color: Color) -> void:
 	$grup/Player.get_node("ColorRect").color = $grup/ColorPickerButton.color
+
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	Ortak.volume =  value # int($grup/HSlider.value)	
+	print(Ortak.volume)

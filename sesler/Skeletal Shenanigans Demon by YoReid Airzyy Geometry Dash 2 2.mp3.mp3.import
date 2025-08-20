@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgwgclfc05m4d"
+path="res://.godot/imported/Skeletal Shenanigans Demon by YoReid Airzyy Geometry Dash 2 2.mp3.mp3-63c2eb805ce71a8e98513414983dac6f.mp3str"
+
+[deps]
+
+source_file="res://sesler/Skeletal Shenanigans Demon by YoReid Airzyy Geometry Dash 2 2.mp3.mp3"
+dest_files=["res://.godot/imported/Skeletal Shenanigans Demon by YoReid Airzyy Geometry Dash 2 2.mp3.mp3-63c2eb805ce71a8e98513414983dac6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -88,7 +88,16 @@ offset_top = 168.0
 offset_right = 420.0
 offset_bottom = 201.0
 
+[node name="HSlider" type="HSlider" parent="grup"]
+offset_left = 575.0
+offset_top = 127.0
+offset_right = 820.0
+offset_bottom = 165.0
+min_value = -80.0
+max_value = 24.0
+
 [connection signal="pressed" from="grup/Player/next" to="." method="_on_next_pressed"]
 [connection signal="pressed" from="grup/Player/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="grup/start" to="." method="_on_start_pressed"]
 [connection signal="color_changed" from="grup/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
+[connection signal="value_changed" from="grup/HSlider" to="." method="_on_h_slider_value_changed"]

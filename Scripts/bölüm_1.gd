@@ -10,6 +10,12 @@ func _ready() -> void:
 	$Player.get_node("ColorRect").color = Ortak.color
 	$Player.get_node("CPUParticles2D").color = Ortak.color
 	
+	if Ortak.volume > -80:
+		
+		$AudioStreamPlayer.volume_db = Ortak.volume
+		$AudioStreamPlayer.play()
+	
+	
 	bg1 = $"Bg04-hd"
 	bg2 = $"Bg04-hd2"
 	g1=$ground1

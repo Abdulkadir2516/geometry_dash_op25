@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://of3upf6gs1tt"]
+[gd_scene load_steps=7 format=3 uid="uid://of3upf6gs1tt"]
 
 [ext_resource type="Texture2D" uid="uid://cfxle4jw5n06b" path="res://assets/backgrounds/bg04-hd.png" id="1_4jlbv"]
 [ext_resource type="Script" uid="uid://bdefd51wmnpe" path="res://Scripts/bölüm_1.gd" id="1_utx4c"]
 [ext_resource type="PackedScene" uid="uid://cfwi5byy1usu2" path="res://Sahneler/player.tscn" id="3_aalt0"]
 [ext_resource type="Texture2D" uid="uid://3egoyquaowuo" path="res://assets/grounds/Screenshot_2.png" id="4_qta10"]
 [ext_resource type="PackedScene" uid="uid://cxbear524v3cn" path="res://Sahneler/blok.tscn" id="5_60nbn"]
+[ext_resource type="AudioStream" uid="uid://bg84w0p02qwaa" path="res://sesler/Forever Bound - Stereo Madness.mp3" id="6_iwj82"]
 
 [node name="Bölüm1" type="Node2D"]
 script = ExtResource("1_utx4c")
@@ -54,3 +55,7 @@ position = Vector2(240, 430)
 scale = Vector2(1.5, 1.5)
 
 [node name="blok" parent="." instance=ExtResource("5_60nbn")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_iwj82")
+autoplay = true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bg84w0p02qwaa"
+path="res://.godot/imported/Forever Bound - Stereo Madness.mp3-0ebb542fb43a0926d2ef826aa3dbe61e.mp3str"
+
+[deps]
+
+source_file="res://sesler/Forever Bound - Stereo Madness.mp3"
+dest_files=["res://.godot/imported/Forever Bound - Stereo Madness.mp3-0ebb542fb43a0926d2ef826aa3dbe61e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

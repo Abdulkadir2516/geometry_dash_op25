@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dp5kllini2vex"
+path="res://.godot/imported/Skeletal Shenanigans 100 Demon by YoReid Airzyy Geometry.mp3-fd34538c26b03a4a354dd2822f4bc233.mp3str"
+
+[deps]
+
+source_file="res://sesler/Skeletal Shenanigans 100 Demon by YoReid Airzyy Geometry.mp3"
+dest_files=["res://.godot/imported/Skeletal Shenanigans 100 Demon by YoReid Airzyy Geometry.mp3-fd34538c26b03a4a354dd2822f4bc233.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwe3mfbc2x8xt"
+path="res://.godot/imported/Geometry Dash Music - The Beginning Of Time.mp3-b929eea5bc94759bf8f133307bac352d.mp3str"
+
+[deps]
+
+source_file="res://sesler/Geometry Dash Music - The Beginning Of Time.mp3"
+dest_files=["res://.godot/imported/Geometry Dash Music - The Beginning Of Time.mp3-b929eea5bc94759bf8f133307bac352d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
