@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="geometry_dash_op25"
-run/main_scene="uid://px7ynjfo4xfo"
+run/main_scene="uid://of3upf6gs1tt"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxbear524v3cn"]
+[gd_scene load_steps=5 format=3 uid="uid://dcrfhl3sfynkx"]
 
-[ext_resource type="Texture2D" uid="uid://8n0yg5wt11w0" path="res://assets/spritesheet.png" id="1_jj5nw"]
+[ext_resource type="Texture2D" uid="uid://dvjdp8bhvj11k" path="res://assets/spikes.png" id="1_w77pg"]
 
 [sub_resource type="GDScript" id="GDScript_5kvla"]
 script/source = "extends CharacterBody2D
@@ -16,30 +16,29 @@ func die():
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wld0c"]
-size = Vector2(44.3283, 4.13636)
+size = Vector2(7.45201, 6.54545)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jj5nw"]
 
-[node name="blok" type="CharacterBody2D"]
+[node name="sivri_blok" type="CharacterBody2D"]
 script = SubResource("GDScript_5kvla")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(43, 8.84375)
+position = Vector2(42, 41)
 scale = Vector2(1.22348, 1.375)
 shape = SubResource("RectangleShape2D_wld0c")
 
 [node name="kutu" type="Sprite2D" parent="."]
 position = Vector2(43, 36)
 scale = Vector2(1.22348, 1.375)
-texture = ExtResource("1_jj5nw")
-hframes = 6
-vframes = 2
-frame = 8
+texture = ExtResource("1_w77pg")
+hframes = 4
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(41, 34)
 
 [node name="hitbox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 7)
 shape = SubResource("RectangleShape2D_jj5nw")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

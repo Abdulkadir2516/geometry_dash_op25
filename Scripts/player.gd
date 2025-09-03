@@ -2,10 +2,11 @@ extends CharacterBody2D
 
 @export var karakterHiz = 7
 var kontrol = true
+var kontrol2 = true
 #Birinci Yöntem
 func _physics_process(delta: float) -> void:
 	velocity = Vector2.ZERO
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") and kontrol2:
 		
 		if kontrol:
 			kontrol = false
@@ -21,10 +22,15 @@ func _physics_process(delta: float) -> void:
 		$".".rotation = 0
 		
 	if position.y < 430 and not Input.is_action_just_pressed("jump") and kontrol:
+		kontrol2 = false
+		
 		velocity.y += 2
 
-		move_and_collide(velocity * karakterHiz)
+		var check = move_and_collide(velocity * karakterHiz)
 		await get_tree().create_timer(.1).timeout
+		
+		if check or position.y > 420:
+			kontrol2 = true
 
 		
 		

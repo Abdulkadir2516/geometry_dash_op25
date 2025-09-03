@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://of3upf6gs1tt"]
+[gd_scene load_steps=9 format=3 uid="uid://of3upf6gs1tt"]
 
 [ext_resource type="Texture2D" uid="uid://cfxle4jw5n06b" path="res://assets/backgrounds/bg04-hd.png" id="1_4jlbv"]
 [ext_resource type="Script" uid="uid://bdefd51wmnpe" path="res://Scripts/bölüm_1.gd" id="1_utx4c"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://3egoyquaowuo" path="res://assets/grounds/Screenshot_2.png" id="4_qta10"]
 [ext_resource type="PackedScene" uid="uid://cxbear524v3cn" path="res://Sahneler/blok.tscn" id="5_60nbn"]
 [ext_resource type="AudioStream" uid="uid://bg84w0p02qwaa" path="res://sesler/Forever Bound - Stereo Madness.mp3" id="6_iwj82"]
+[ext_resource type="PackedScene" uid="uid://dcrfhl3sfynkx" path="res://Sahneler/sivri_blok.tscn" id="7_wxqqn"]
+[ext_resource type="PackedScene" uid="uid://cogw1m80til7q" path="res://Sahneler/cukur_blok.tscn" id="8_ikmcu"]
 
 [node name="Bölüm1" type="Node2D"]
 script = ExtResource("1_utx4c")
@@ -54,8 +56,52 @@ color = Color(0, 0, 0.156863, 0.807843)
 position = Vector2(240, 430)
 scale = Vector2(1.5, 1.5)
 
-[node name="blok" parent="." instance=ExtResource("5_60nbn")]
+[node name="blok1" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(1879, 387)
+script = null
+
+[node name="blok2" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(1931, 387)
+script = null
+
+[node name="blok3" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(1982, 387)
+script = null
+
+[node name="blok4" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2159, 387)
+script = null
+
+[node name="blok5" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2211, 387)
+script = null
+
+[node name="blok6" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2262, 387)
+script = null
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_iwj82")
 autoplay = true
+
+[node name="sivri_blok1" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(1185, 388)
+script = null
+
+[node name="sivri_blok3" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(1825, 388)
+script = null
+
+[node name="sivri_blok2" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(1501, 388)
+script = null
+
+[node name="cukur_blok1" parent="." instance=ExtResource("8_ikmcu")]
+position = Vector2(2052, 391)
+scale = Vector2(0.6, 0.6)
+script = null
+
+[node name="cukur_blok2" parent="." instance=ExtResource("8_ikmcu")]
+position = Vector2(2115, 391)
+scale = Vector2(0.6, 0.6)
+script = null

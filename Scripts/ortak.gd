@@ -1,6 +1,6 @@
 extends Node
 
-var frame : int
-var color : Color
+var frame := 16
+var color := Color.RED
 
-var volume : int
+var volume := -80
