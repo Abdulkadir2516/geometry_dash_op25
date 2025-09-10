@@ -6,7 +6,7 @@ var kontrol2 = true
 #Birinci Yöntem
 func _physics_process(delta: float) -> void:
 	velocity = Vector2.ZERO
-	if Input.is_action_just_pressed("jump") and kontrol2:
+	if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("tik") and kontrol2:
 		
 		if kontrol:
 			kontrol = false
@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 			
 		$".".rotation = 0
 		
-	if position.y < 430 and not Input.is_action_just_pressed("jump") and kontrol:
+	if position.y < 430 and kontrol:
 		kontrol2 = false
 		
 		velocity.y += 2

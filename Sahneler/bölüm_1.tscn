@@ -54,7 +54,7 @@ color = Color(0, 0, 0.156863, 0.807843)
 
 [node name="Player" parent="." instance=ExtResource("3_aalt0")]
 position = Vector2(240, 430)
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.4, 1.4)
 
 [node name="blok1" parent="." instance=ExtResource("5_60nbn")]
 position = Vector2(1879, 387)
@@ -76,8 +76,56 @@ script = null
 position = Vector2(2211, 387)
 script = null
 
+[node name="blok18" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2263, 387)
+script = null
+
+[node name="blok19" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2315, 387)
+script = null
+
 [node name="blok6" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(2262, 387)
+position = Vector2(2366, 387)
+script = null
+
+[node name="blok21" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2421, 387)
+script = null
+
+[node name="blok7" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2479, 302)
+script = null
+
+[node name="blok8" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2532, 302)
+script = null
+
+[node name="blok9" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2584, 302)
+script = null
+
+[node name="blok20" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2632, 302)
+script = null
+
+[node name="blok10" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2683, 302)
+script = null
+
+[node name="blok11" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2739, 206)
+script = null
+
+[node name="blok12" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2791, 206)
+script = null
+
+[node name="blok13" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2843, 206)
+script = null
+
+[node name="blok22" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2894, 206)
 script = null
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -85,15 +133,135 @@ stream = ExtResource("6_iwj82")
 autoplay = true
 
 [node name="sivri_blok1" parent="." instance=ExtResource("7_wxqqn")]
-position = Vector2(1185, 388)
+position = Vector2(1072, 390)
 script = null
 
 [node name="sivri_blok3" parent="." instance=ExtResource("7_wxqqn")]
 position = Vector2(1825, 388)
 script = null
 
+[node name="sivri_blok4" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(2423, 329)
+script = null
+
+[node name="sivri_blok5" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(2684, 248)
+script = null
+
+[node name="blok14" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(2991, 159)
+script = null
+
+[node name="blok15" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3043, 159)
+script = null
+
+[node name="blok16" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3095, 159)
+script = null
+
+[node name="blok17" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3147, 159)
+script = null
+
+[node name="sivri_blok6" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(2947, 200)
+script = null
+
+[node name="sivri_blok7" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(3199, 157)
+script = null
+
+[node name="blok23" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3287, 255)
+script = null
+
+[node name="blok24" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3339, 255)
+script = null
+
+[node name="blok25" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3391, 255)
+script = null
+
+[node name="blok26" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3507, 392)
+script = null
+
+[node name="sivri_blok9" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(3442, 253)
+script = null
+
+[node name="blok27" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3559, 392)
+script = null
+
+[node name="blok28" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3611, 392)
+script = null
+
+[node name="blok29" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3663, 392)
+script = null
+
+[node name="blok30" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3715, 392)
+script = null
+
+[node name="sivri_blok10" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(3767, 390)
+script = null
+
+[node name="blok31" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3843, 392)
+script = null
+
+[node name="blok32" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3895, 392)
+script = null
+
+[node name="blok33" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3947, 392)
+script = null
+
+[node name="blok34" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(3999, 392)
+script = null
+
+[node name="blok35" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(4051, 392)
+script = null
+
+[node name="blok36" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(4271, 392)
+script = null
+
+[node name="blok37" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(4323, 392)
+script = null
+
+[node name="blok38" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(4375, 392)
+script = null
+
+[node name="blok39" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(4427, 392)
+script = null
+
+[node name="sivri_blok12" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(4104, 391)
+script = null
+
+[node name="sivri_blok8" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(3227, 157)
+script = null
+
+[node name="sivri_blok11" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(3792, 391)
+script = null
+
 [node name="sivri_blok2" parent="." instance=ExtResource("7_wxqqn")]
-position = Vector2(1501, 388)
+position = Vector2(1444, 390)
 script = null
 
 [node name="cukur_blok1" parent="." instance=ExtResource("8_ikmcu")]
@@ -103,5 +271,15 @@ script = null
 
 [node name="cukur_blok2" parent="." instance=ExtResource("8_ikmcu")]
 position = Vector2(2115, 391)
+scale = Vector2(0.6, 0.6)
+script = null
+
+[node name="cukur_blok3" parent="." instance=ExtResource("8_ikmcu")]
+position = Vector2(4164, 391)
+scale = Vector2(0.6, 0.6)
+script = null
+
+[node name="cukur_blok4" parent="." instance=ExtResource("8_ikmcu")]
+position = Vector2(4227, 391)
 scale = Vector2(0.6, 0.6)
 script = null
