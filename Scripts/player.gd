@@ -6,6 +6,13 @@ var kontrol2 = true
 #Birinci Yöntem
 func _physics_process(delta: float) -> void:
 	velocity = Vector2.ZERO
+	
+	if Input.is_action_pressed("gizli"):
+		$".".visible=false
+	else:
+		$".".visible=true
+
+	
 	if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("tik") and kontrol2:
 		
 		if kontrol:

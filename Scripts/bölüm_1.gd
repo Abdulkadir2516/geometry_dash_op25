@@ -45,16 +45,6 @@ func _physics_process(delta: float) -> void:
 	_sabit_hızda_hareket(bg1, hiz)
 	_sabit_hızda_hareket(bg2, hiz)
 	
-	#for i in range(1,blok_sayi+1):
-		#if get_node("blok"+str(i)) != null:
-			#_sabit_hızda_hareket2(get_node("blok"+str(i)),hiz*1.5)
-	#for i in range(1,sivri_blok_sayi+1):
-		#if get_node("sivri_blok"+str(i)) != null:
-			#_sabit_hızda_hareket2(get_node("sivri_blok"+str(i)),hiz*1.5)
-	#for i in range(1,cukur_blok_sayi+1):
-		#if get_node("cukur_blok"+str(i)) != null:
-			#_sabit_hızda_hareket2(get_node("cukur_blok"+str(i)),hiz*1.5)
-	#
 	
 	var parent = $"."
 	for child in parent.get_children():
