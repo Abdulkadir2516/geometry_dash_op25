@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 		
 		if kontrol:
 			kontrol = false
-			for i in range(10):
+			for i in range(11):
 				velocity.y = velocity.y - 2
 				$".".rotation += 1
 
@@ -31,10 +31,9 @@ func _physics_process(delta: float) -> void:
 	if position.y < 430 and kontrol:
 		kontrol2 = false
 		
-		velocity.y += 2
+		velocity.y += 1.5
 
 		var check = move_and_collide(velocity * karakterHiz)
-		await get_tree().create_timer(.1).timeout
 		
 		if check or position.y > 420:
 			kontrol2 = true

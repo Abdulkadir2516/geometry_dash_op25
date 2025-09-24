@@ -252,6 +252,72 @@ script = null
 position = Vector2(4104, 391)
 script = null
 
+[node name="sivri_blok13" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(4841, 403)
+script = null
+
+[node name="sivri_blok14" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(4870, 402)
+script = null
+
+[node name="sivri_blok15" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(4902, 403)
+script = null
+
+[node name="sivri_blok17" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(6261, 405)
+script = null
+
+[node name="sivri_blok18" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(6298, 404)
+script = null
+
+[node name="sivri_blok19" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(6337, 405)
+script = null
+
+[node name="sivri_blok20" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(7421, 37)
+rotation = -2.35619
+script = null
+
+[node name="sivri_blok22" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(7669, 37)
+rotation = -2.35619
+script = null
+
+[node name="sivri_blok21" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(7493, -77)
+rotation = -2.35619
+script = null
+
+[node name="sivri_blok23" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(7853, 37)
+rotation = -2.35619
+script = null
+
+[node name="sivri_blok24" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(8101, 37)
+rotation = -2.35619
+script = null
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(715, 251)
+
+[node name="sivri_blok26" parent="Node2D" instance=ExtResource("7_wxqqn")]
+position = Vector2(-52, -52)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok25" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(7925, -77)
+rotation = -2.35619
+script = null
+
+[node name="sivri_blok16" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(5744, 400)
+script = null
+
 [node name="sivri_blok8" parent="." instance=ExtResource("7_wxqqn")]
 position = Vector2(3227, 157)
 script = null
