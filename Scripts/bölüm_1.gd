@@ -65,6 +65,7 @@ func _physics_process(delta: float) -> void:
 
 	
 	var parent = $"."
+	var gidisat = -1
 	for child in parent.get_children():
 		
 		var kosul = child.name.begins_with("sivri_blok") or child.name.begins_with("cukur_blok") or child.name.begins_with("blok")
@@ -83,15 +84,36 @@ func _physics_process(delta: float) -> void:
 			if (child.name == "sivri_blok13" or child.name == "sivri_blok14" or child.name == "sivri_blok15") and child.position.x < 400:
 				_sabit_hızda_hareket2(child,hiz-1)
 			else:
-				
 				_sabit_hızda_hareket2(child,hiz*1.5)
 				
 			
 			if child.name == "sivri_blok50" and child.position.x > 400 and child.position.x < 800:
+				remove_child(child)
 				if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("tik"):
 					for i in range(400):
 						$Player.position.y -= 10
 						await get_tree().create_timer(.02).timeout
+
+			if child.name.begins_with("blok") and int(child.name.trim_prefix("blok")) in range(40, 51) and child.position.x <200:
+				
+				_sabit_hızda_hareket2(child,(hiz+1.6)*-1)
+			
+			if child.name == "blok67" and child.position.x < 400:
+				_sabit_hızda_hareket2(child,(hiz+2)*-1)
+				#Ödev
+				if child.position.y < 400:
+					if child.position.y > 100:
+						_sabit_hızda_hareket3(child, hiz*1.1)
+					else:
+						_sabit_hızda_hareket3(child,-1*hiz*1.1)
+				else:
+					if child.position.y < 100:
+						_sabit_hızda_hareket3(child, hiz*1.1)
+					else:
+						_sabit_hızda_hareket3(child,-1*hiz*1.1)
+
+				
+				
 
 	
 func _sabit_hızda_hareket(karakter:Sprite2D, hiz:float):
