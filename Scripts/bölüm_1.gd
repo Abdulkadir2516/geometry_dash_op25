@@ -43,13 +43,26 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	
-	$Node2D.rotation -=.05
-	$Node2D.position.x -= 0.3
+	
+	if Ortak.is_player_death:		
+		Ortak.is_player_death = false
+
+		get_tree().paused = true
+		await get_tree().create_timer(1).timeout
+		get_tree().paused = false
+		get_tree().reload_current_scene()
+
+
+	$Node2D.rotation +=.05
+	$Node2D.position.x -= 0.5
 	_sabit_hızda_hareket(g1, hiz*3)
 	_sabit_hızda_hareket(g2, hiz*3)
 	_sabit_hızda_hareket(bg1, hiz)
 	_sabit_hızda_hareket(bg2, hiz)
 	
+	
+ 
+
 	
 	var parent = $"."
 	for child in parent.get_children():
@@ -59,6 +72,11 @@ func _physics_process(delta: float) -> void:
 				
 			if child.name in ["sivri_blok17","sivri_blok18","sivri_blok19"] and child.position.x < 420:
 				child.visible=true
+			
+			if child.name in ["sivri_blok50"] and child.position.x < 420:
+				child.visible=false
+				
+			
 			if child.name in ["sivri_blok20","sivri_blok21","sivri_blok22","sivri_blok23","sivri_blok24","sivri_blok25"] and child.position.x < 1000:
 				_sabit_hızda_hareket3(child,hiz*1.1)
 
@@ -67,7 +85,13 @@ func _physics_process(delta: float) -> void:
 			else:
 				
 				_sabit_hızda_hareket2(child,hiz*1.5)
-		
+				
+			
+			if child.name == "sivri_blok50" and child.position.x > 400 and child.position.x < 800:
+				if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("tik"):
+					for i in range(400):
+						$Player.position.y -= 10
+						await get_tree().create_timer(.02).timeout
 
 	
 func _sabit_hızda_hareket(karakter:Sprite2D, hiz:float):

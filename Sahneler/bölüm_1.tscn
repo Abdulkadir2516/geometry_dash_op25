@@ -276,6 +276,126 @@ script = null
 position = Vector2(6337, 405)
 script = null
 
+[node name="sivri_blok26" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(8849, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok27" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(8886, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok28" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(8925, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok29" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(8969, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok30" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9006, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok31" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9045, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok32" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9089, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok33" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9126, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok34" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9165, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok35" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9209, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok36" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9246, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok37" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9285, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok38" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9329, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok39" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9366, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok40" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9405, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok41" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9449, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok42" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9486, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok43" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9525, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok44" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9569, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok45" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9606, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok46" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9645, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok47" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9689, 68)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok48" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9726, 67)
+rotation = -3.14159
+script = null
+
+[node name="sivri_blok49" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9765, 68)
+rotation = -3.14159
+script = null
+
 [node name="sivri_blok20" parent="." instance=ExtResource("7_wxqqn")]
 position = Vector2(7421, 37)
 rotation = -2.35619
@@ -316,6 +436,10 @@ script = null
 
 [node name="sivri_blok16" parent="." instance=ExtResource("7_wxqqn")]
 position = Vector2(5744, 400)
+script = null
+
+[node name="sivri_blok50" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(9194, 390)
 script = null
 
 [node name="sivri_blok8" parent="." instance=ExtResource("7_wxqqn")]

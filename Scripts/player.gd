@@ -55,3 +55,13 @@ func _physics_process(delta: float) -> void:
 		#for i in range(10):
 			#position.y += 10
 			#await get_tree().create_timer(.05).timeout
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	Ortak.is_player_death = true
+	
+	print("öldün")
+	#for i in range(100):
+		#position.y -= 5
+		#await get_tree().create_timer(.05).timeout
+	
