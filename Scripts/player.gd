@@ -58,10 +58,12 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	Ortak.is_player_death = true
+	if area.name in ["alt","üst","Area2D2"] or Input.is_action_pressed("gizli"):
+		Ortak.is_player_death = false
+	else:
+		
+		Ortak.is_player_death = true
+		Ortak.ust = false
+		Ortak.alt = false
 	
-	print("öldün")
-	#for i in range(100):
-		#position.y -= 5
-		#await get_tree().create_timer(.05).timeout
 	

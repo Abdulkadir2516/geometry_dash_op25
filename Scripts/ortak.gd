@@ -5,3 +5,5 @@ var color := Color.RED
 
 var volume := -80
 var is_player_death := false
+var ust = false
+var alt = false

@@ -9,7 +9,7 @@ var g2 = Sprite2D
 var sivri_blok_sayi = 0
 var blok_sayi = 0
 var cukur_blok_sayi = 0
-
+var yukarı = false
 
 func _ready() -> void:
 	
@@ -98,21 +98,16 @@ func _physics_process(delta: float) -> void:
 				
 				_sabit_hızda_hareket2(child,(hiz+1.6)*-1)
 			
-			if child.name == "blok67" and child.position.x < 400:
-				_sabit_hızda_hareket2(child,(hiz+2)*-1)
-				#Ödev
-				if child.position.y < 400:
-					if child.position.y > 100:
-						_sabit_hızda_hareket3(child, hiz*1.1)
-					else:
-						_sabit_hızda_hareket3(child,-1*hiz*1.1)
-				else:
-					if child.position.y < 100:
-						_sabit_hızda_hareket3(child, hiz*1.1)
-					else:
-						_sabit_hızda_hareket3(child,-1*hiz*1.1)
+			if child.name == "blok67" and child.position.x < 50:
+				_sabit_hızda_hareket2(child,-hiz*1.5)
 
-				
+				if Ortak.ust:
+					_sabit_hızda_hareket3(child, hiz*1.1)
+				elif Ortak.alt:
+					_sabit_hızda_hareket3(child,-1*hiz*1.1)
+				else:
+					_sabit_hızda_hareket3(child, hiz*1.1)
+
 				
 
 	
@@ -134,3 +129,15 @@ func _sabit_hızda_hareket3(karakter:CharacterBody2D, hiz:float):
 		if karakter.position.x < -600:
 			remove_child(karakter)
 	
+
+
+func _on_üst_area_entered(area: Area2D) -> void:
+	
+	Ortak.ust = true
+	Ortak.alt = false
+	
+func _on_alt_area_entered(area: Area2D) -> void:
+	
+	Ortak.ust = false
+	Ortak.alt = true
+		
