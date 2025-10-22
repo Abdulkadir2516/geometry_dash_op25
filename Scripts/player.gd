@@ -11,9 +11,16 @@ func _physics_process(delta: float) -> void:
 		$".".visible=false
 	else:
 		$".".visible=true
-
 	
-	if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("tik") and kontrol2:
+	if Input.is_action_pressed("ileri"):
+		velocity.x = velocity.x + 0.5
+		move_and_collide(velocity*karakterHiz)
+	elif Input.is_action_pressed("geri"):
+		velocity.x = velocity.x - 0.5
+		move_and_collide(velocity*karakterHiz)
+		
+	
+	if Input.is_action_just_pressed("jump") and kontrol2:
 		
 		if kontrol:
 			kontrol = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://of3upf6gs1tt"]
+[gd_scene load_steps=11 format=3 uid="uid://of3upf6gs1tt"]
 
 [ext_resource type="Texture2D" uid="uid://cfxle4jw5n06b" path="res://assets/backgrounds/bg04-hd.png" id="1_4jlbv"]
 [ext_resource type="Script" uid="uid://bdefd51wmnpe" path="res://Scripts/bölüm_1.gd" id="1_utx4c"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://bg84w0p02qwaa" path="res://sesler/Forever Bound - Stereo Madness.mp3" id="6_iwj82"]
 [ext_resource type="PackedScene" uid="uid://dcrfhl3sfynkx" path="res://Sahneler/sivri_blok.tscn" id="7_wxqqn"]
 [ext_resource type="PackedScene" uid="uid://cogw1m80til7q" path="res://Sahneler/cukur_blok.tscn" id="8_ikmcu"]
+[ext_resource type="Texture2D" uid="uid://de1fyupxdbq4h" path="res://assets/portal.png" id="9_ikmcu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxqqn"]
 size = Vector2(592, 20)
@@ -288,263 +289,519 @@ position = Vector2(10769, 363)
 script = null
 
 [node name="blok59" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14158, 425)
+position = Vector2(15078, 425)
 script = null
 
 [node name="blok60" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14206, 425)
+position = Vector2(15126, 425)
 script = null
 
 [node name="blok61" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14254, 425)
+position = Vector2(15174, 425)
 script = null
 
 [node name="blok62" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14302, 425)
+position = Vector2(15222, 425)
 script = null
 
 [node name="blok63" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14350, 425)
+position = Vector2(15270, 425)
 script = null
 
 [node name="blok64" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14398, 425)
+position = Vector2(15318, 425)
 script = null
 
 [node name="blok65" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14446, 425)
+position = Vector2(15366, 425)
 script = null
 
 [node name="blok66" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14494, 425)
+position = Vector2(15414, 425)
 script = null
 
 [node name="blok68" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14542, 425)
+position = Vector2(15462, 425)
 script = null
 
 [node name="blok69" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14590, 425)
+position = Vector2(15510, 425)
 script = null
 
 [node name="blok70" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14638, 425)
+position = Vector2(15558, 425)
 script = null
 
 [node name="blok71" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14686, 425)
+position = Vector2(15606, 425)
 script = null
 
 [node name="blok72" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14734, 425)
+position = Vector2(15654, 425)
 script = null
 
 [node name="blok73" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14782, 425)
+position = Vector2(15702, 425)
 script = null
 
 [node name="blok74" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14830, 425)
+position = Vector2(15750, 425)
 script = null
 
 [node name="blok75" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14878, 425)
+position = Vector2(15798, 425)
 script = null
 
 [node name="blok76" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14918, 425)
+position = Vector2(15846, 425)
 script = null
 
 [node name="blok77" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14966, 425)
+position = Vector2(15894, 425)
 script = null
 
 [node name="blok78" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15014, 425)
+position = Vector2(15942, 425)
 script = null
 
 [node name="blok79" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15062, 425)
+position = Vector2(15990, 425)
 script = null
 
 [node name="blok80" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15110, 425)
+position = Vector2(16038, 425)
 script = null
 
 [node name="blok81" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15158, 425)
+position = Vector2(16086, 425)
 script = null
 
 [node name="blok82" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15206, 425)
+position = Vector2(16134, 425)
 script = null
 
 [node name="blok83" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15254, 425)
+position = Vector2(16182, 425)
 script = null
 
 [node name="blok84" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15302, 425)
+position = Vector2(16230, 425)
 script = null
 
 [node name="blok85" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15350, 425)
+position = Vector2(16278, 425)
 script = null
 
 [node name="blok86" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15398, 425)
+position = Vector2(16326, 425)
 script = null
 
 [node name="blok87" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15446, 425)
+position = Vector2(16374, 425)
 script = null
 
 [node name="blok88" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15494, 425)
+position = Vector2(16422, 425)
 script = null
 
 [node name="blok89" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15542, 425)
+position = Vector2(16470, 425)
 script = null
 
 [node name="blok90" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15590, 425)
+position = Vector2(16518, 425)
 script = null
 
 [node name="blok91" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15638, 425)
+position = Vector2(16566, 425)
 script = null
 
 [node name="blok92" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15686, 425)
+position = Vector2(16614, 425)
 script = null
 
 [node name="blok93" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15734, 425)
+position = Vector2(16662, 425)
 script = null
 
 [node name="blok94" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15782, 425)
+position = Vector2(16710, 425)
 script = null
 
 [node name="blok95" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15830, 425)
+position = Vector2(16758, 425)
 script = null
 
 [node name="blok96" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15878, 425)
+position = Vector2(16806, 425)
 script = null
 
 [node name="blok97" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15926, 425)
+position = Vector2(16854, 425)
 script = null
 
 [node name="blok98" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(15974, 425)
+position = Vector2(16902, 425)
 script = null
 
 [node name="blok99" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16022, 425)
+position = Vector2(16950, 425)
 script = null
 
 [node name="blok100" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16070, 425)
+position = Vector2(16998, 425)
 script = null
 
 [node name="blok101" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16118, 425)
+position = Vector2(17046, 425)
 script = null
 
 [node name="blok102" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16166, 425)
+position = Vector2(17094, 425)
 script = null
 
 [node name="blok103" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16214, 425)
+position = Vector2(17142, 425)
 script = null
 
 [node name="blok104" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16262, 425)
+position = Vector2(17190, 425)
 script = null
 
 [node name="blok105" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16310, 425)
+position = Vector2(17238, 425)
 script = null
 
 [node name="blok106" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16358, 425)
+position = Vector2(17286, 425)
 script = null
 
 [node name="blok107" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16406, 425)
+position = Vector2(17334, 425)
 script = null
 
 [node name="blok108" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16446, 425)
+position = Vector2(17374, 425)
 script = null
 
 [node name="blok109" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16494, 425)
+position = Vector2(17422, 425)
 script = null
 
 [node name="blok110" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16542, 425)
+position = Vector2(17470, 425)
 script = null
 
 [node name="blok111" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16590, 425)
+position = Vector2(17518, 425)
 script = null
 
 [node name="blok112" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16638, 425)
+position = Vector2(17566, 425)
 script = null
 
 [node name="blok113" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16686, 425)
+position = Vector2(17614, 425)
 script = null
 
 [node name="blok114" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16734, 425)
+position = Vector2(17662, 425)
 script = null
 
 [node name="blok115" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16782, 425)
+position = Vector2(17710, 425)
 script = null
 
 [node name="blok116" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16830, 425)
+position = Vector2(17758, 425)
 script = null
 
 [node name="blok117" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16878, 425)
+position = Vector2(17806, 425)
 script = null
 
 [node name="blok118" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16926, 425)
+position = Vector2(17854, 425)
 script = null
 
 [node name="blok119" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(16974, 425)
+position = Vector2(17902, 425)
 script = null
 
 [node name="blok120" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(17022, 425)
+position = Vector2(17950, 425)
 script = null
 
 [node name="blok121" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(17070, 425)
+position = Vector2(17998, 425)
 script = null
 
 [node name="blok122" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(17118, 425)
+position = Vector2(18046, 425)
 script = null
 
 [node name="blok123" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(17166, 425)
+position = Vector2(18094, 425)
+script = null
+
+[node name="blok124" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18142, 425)
+script = null
+
+[node name="blok125" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18190, 425)
+script = null
+
+[node name="blok126" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18238, 425)
+script = null
+
+[node name="blok127" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18286, 425)
+script = null
+
+[node name="blok128" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18334, 425)
+script = null
+
+[node name="blok129" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18382, 425)
+script = null
+
+[node name="blok130" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18430, 425)
+script = null
+
+[node name="blok131" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18478, 425)
+script = null
+
+[node name="blok132" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18526, 425)
+script = null
+
+[node name="blok133" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18574, 425)
+script = null
+
+[node name="blok134" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18622, 425)
+script = null
+
+[node name="blok135" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18670, 425)
+script = null
+
+[node name="blok136" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18718, 425)
+script = null
+
+[node name="blok137" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18766, 425)
+script = null
+
+[node name="blok138" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18814, 425)
+script = null
+
+[node name="blok139" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18862, 425)
+script = null
+
+[node name="blok140" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18902, 425)
+script = null
+
+[node name="blok141" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18950, 425)
+script = null
+
+[node name="blok142" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(18998, 425)
+script = null
+
+[node name="blok143" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19046, 425)
+script = null
+
+[node name="blok144" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19094, 425)
+script = null
+
+[node name="blok145" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19142, 425)
+script = null
+
+[node name="blok146" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19190, 425)
+script = null
+
+[node name="blok147" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19238, 425)
+script = null
+
+[node name="blok148" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19286, 425)
+script = null
+
+[node name="blok149" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19334, 425)
+script = null
+
+[node name="blok150" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19382, 425)
+script = null
+
+[node name="blok151" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19430, 425)
+script = null
+
+[node name="blok152" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19478, 425)
+script = null
+
+[node name="blok153" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19526, 425)
+script = null
+
+[node name="blok154" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19574, 425)
+script = null
+
+[node name="blok155" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19622, 425)
+script = null
+
+[node name="blok156" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19670, 425)
+script = null
+
+[node name="blok157" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19718, 425)
+script = null
+
+[node name="blok158" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19766, 425)
+script = null
+
+[node name="blok159" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19814, 425)
+script = null
+
+[node name="blok160" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19862, 425)
+script = null
+
+[node name="blok161" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19910, 425)
+script = null
+
+[node name="blok162" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(19958, 425)
+script = null
+
+[node name="blok163" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20006, 425)
+script = null
+
+[node name="blok164" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20054, 425)
+script = null
+
+[node name="blok165" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20102, 425)
+script = null
+
+[node name="blok166" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20150, 425)
+script = null
+
+[node name="blok167" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20198, 425)
+script = null
+
+[node name="blok168" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20246, 425)
+script = null
+
+[node name="blok169" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20294, 425)
+script = null
+
+[node name="blok170" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20342, 425)
+script = null
+
+[node name="blok171" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20390, 425)
+script = null
+
+[node name="blok172" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20430, 425)
+script = null
+
+[node name="blok173" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20478, 425)
+script = null
+
+[node name="blok174" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20526, 425)
+script = null
+
+[node name="blok175" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20574, 425)
+script = null
+
+[node name="blok176" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20622, 425)
+script = null
+
+[node name="blok177" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20670, 425)
+script = null
+
+[node name="blok178" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20718, 425)
+script = null
+
+[node name="blok179" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20766, 425)
+script = null
+
+[node name="blok180" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20814, 425)
+script = null
+
+[node name="blok181" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20862, 425)
+script = null
+
+[node name="blok182" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20910, 425)
+script = null
+
+[node name="blok183" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(20958, 425)
+script = null
+
+[node name="blok184" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(21006, 425)
+script = null
+
+[node name="blok185" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(21054, 425)
+script = null
+
+[node name="blok186" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(21102, 425)
+script = null
+
+[node name="blok187" parent="." instance=ExtResource("5_60nbn")]
+position = Vector2(21150, 425)
 script = null
 
 [node name="blok67" parent="." instance=ExtResource("5_60nbn")]
-position = Vector2(14168, 538)
+position = Vector2(15096, 538)
 script = null
 
 [node name="blok59" parent="blok67" instance=ExtResource("5_60nbn")]
@@ -957,6 +1214,136 @@ position = Vector2(13409, 215)
 rotation = -6.28318
 script = null
 
+[node name="sivri_blok89" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16001, 247)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok90" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16047, 301)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok93" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16705, 367)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok94" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16751, 421)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok91" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16313, 79)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok92" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(16359, 133)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok95" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17017, 79)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok96" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17063, 133)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok97" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17409, 295)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok98" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17455, 349)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok99" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17721, 127)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok100" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(17767, 181)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok101" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(18145, 267)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok102" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(18191, 321)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok103" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(18801, 135)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok104" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(18847, 189)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok105" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(19169, 117)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok106" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(19215, 171)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok107" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(19475, 110)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok108" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(19521, 164)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok109" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(19969, 255)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok110" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(20015, 309)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok111" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(20329, 69)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok112" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(20375, 123)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok113" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(20643, 318)
+rotation = -7.85397
+script = null
+
+[node name="sivri_blok114" parent="." instance=ExtResource("7_wxqqn")]
+position = Vector2(20689, 372)
+rotation = -7.85397
+script = null
+
 [node name="sivri_blok20" parent="." instance=ExtResource("7_wxqqn")]
 position = Vector2(7421, 37)
 rotation = -2.35619
@@ -1056,6 +1443,19 @@ position = Vector2(197, 462)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="alt"]
 position = Vector2(228, 90)
 shape = SubResource("RectangleShape2D_wxqqn")
+
+[node name="Portal" type="Sprite2D" parent="."]
+position = Vector2(24529.8, 187.75)
+scale = Vector2(5.55435, 2.2931)
+texture = ExtResource("9_ikmcu")
+hframes = 2
+
+[node name="Portal2" type="Sprite2D" parent="."]
+position = Vector2(24538, 428)
+scale = Vector2(5.55435, 2.2931)
+texture = ExtResource("9_ikmcu")
+hframes = 2
+frame = 1
 
 [connection signal="area_entered" from="üst" to="." method="_on_üst_area_entered"]
 [connection signal="area_entered" from="alt" to="." method="_on_alt_area_entered"]
