@@ -12,6 +12,7 @@ var cukur_blok_sayi = 0
 var yukarı = false
 
 func _ready() -> void:
+	Ortak.secim = bool(randi_range(0, 1))
 	
 	$Player.get_node("karakterler").frame = Ortak.frame
 	$Player.get_node("ColorRect").color = Ortak.color
@@ -59,6 +60,10 @@ func _physics_process(delta: float) -> void:
 	_sabit_hızda_hareket(g2, hiz*3)
 	_sabit_hızda_hareket(bg1, hiz)
 	_sabit_hızda_hareket(bg2, hiz)
+	_sabit_hızda_hareket($Image, hiz)
+	if $Image.position.x < 600:
+		_sabit_hızda_hareket($Image, -hiz)
+	
 	
 	
  
@@ -108,6 +113,8 @@ func _physics_process(delta: float) -> void:
 				else:
 					_sabit_hızda_hareket3(child, hiz*1.1)
 
+			if $Image.position.x < 1000 and child.name == "blok67":
+				remove_child(child)
 				
 
 	
@@ -141,3 +148,17 @@ func _on_alt_area_entered(area: Area2D) -> void:
 	Ortak.ust = false
 	Ortak.alt = true
 		
+
+func _on_button_2_pressed() -> void:
+	if Ortak.secim == true:
+		get_tree().change_scene_to_file("res://Sahneler/bölüm_2.tscn")
+	else:
+		Ortak.is_player_death=true
+	
+		
+
+func _on_button_pressed() -> void:
+	if Ortak.secim == false:
+		get_tree().change_scene_to_file("res://Sahneler/bölüm_2.tscn")
+	else:
+		Ortak.is_player_death=true

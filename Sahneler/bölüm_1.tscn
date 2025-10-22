@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://bg84w0p02qwaa" path="res://sesler/Forever Bound - Stereo Madness.mp3" id="6_iwj82"]
 [ext_resource type="PackedScene" uid="uid://dcrfhl3sfynkx" path="res://Sahneler/sivri_blok.tscn" id="7_wxqqn"]
 [ext_resource type="PackedScene" uid="uid://cogw1m80til7q" path="res://Sahneler/cukur_blok.tscn" id="8_ikmcu"]
-[ext_resource type="Texture2D" uid="uid://de1fyupxdbq4h" path="res://assets/portal.png" id="9_ikmcu"]
+[ext_resource type="Texture2D" uid="uid://cdw2it5hpru2d" path="res://assets/image.png" id="9_ikmcu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxqqn"]
 size = Vector2(592, 20)
@@ -31,6 +31,32 @@ texture = ExtResource("1_4jlbv")
 position = Vector2(1800, 300)
 scale = Vector2(1.171, 0.585)
 texture = ExtResource("1_4jlbv")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(22143, 282)
+texture = ExtResource("9_ikmcu")
+
+[node name="Label" type="Label" parent="Image"]
+offset_left = -240.0
+offset_top = -230.0
+offset_right = 270.0
+offset_bottom = -114.0
+theme_override_font_sizes/font_size = 44
+text = "Seç Birini  -  Choose One"
+
+[node name="Button" type="Button" parent="Image"]
+offset_left = 173.0
+offset_top = -12.0
+offset_right = 264.0
+offset_bottom = 41.0
+flat = true
+
+[node name="Button2" type="Button" parent="Image"]
+offset_left = -262.0
+offset_top = -37.0
+offset_right = -171.0
+offset_bottom = 16.0
+flat = true
 
 [node name="ground1" type="Sprite2D" parent="."]
 position = Vector2(600.75, 525.75)
@@ -1422,14 +1448,6 @@ position = Vector2(4227, 391)
 scale = Vector2(0.6, 0.6)
 script = null
 
-[node name="Label" type="Label" parent="."]
-offset_left = 143.0
-offset_top = 18.0
-offset_right = 1195.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 21
-text = "Bölüm birin sonunda 2 seçenek olacak biri dikenli yola çıkacak diğeri bölüm 2ye  bunuda rastgele yapsın"
-
 [node name="üst" type="Area2D" parent="."]
 position = Vector2(198, 79)
 
@@ -1444,18 +1462,7 @@ position = Vector2(197, 462)
 position = Vector2(228, 90)
 shape = SubResource("RectangleShape2D_wxqqn")
 
-[node name="Portal" type="Sprite2D" parent="."]
-position = Vector2(24529.8, 187.75)
-scale = Vector2(5.55435, 2.2931)
-texture = ExtResource("9_ikmcu")
-hframes = 2
-
-[node name="Portal2" type="Sprite2D" parent="."]
-position = Vector2(24538, 428)
-scale = Vector2(5.55435, 2.2931)
-texture = ExtResource("9_ikmcu")
-hframes = 2
-frame = 1
-
+[connection signal="pressed" from="Image/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Image/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="area_entered" from="üst" to="." method="_on_üst_area_entered"]
 [connection signal="area_entered" from="alt" to="." method="_on_alt_area_entered"]
