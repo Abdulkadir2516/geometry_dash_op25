@@ -33,7 +33,7 @@ scale = Vector2(1.171, 0.585)
 texture = ExtResource("1_4jlbv")
 
 [node name="Image" type="Sprite2D" parent="."]
-position = Vector2(22143, 282)
+position = Vector2(14546, 306)
 texture = ExtResource("9_ikmcu")
 
 [node name="Label" type="Label" parent="Image"]

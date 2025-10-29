@@ -64,11 +64,7 @@ func _physics_process(delta: float) -> void:
 	if $Image.position.x < 600:
 		_sabit_hızda_hareket($Image, -hiz)
 	
-	
-	
- 
-
-	
+		
 	var parent = $"."
 	var gidisat = -1
 	for child in parent.get_children():
